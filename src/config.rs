@@ -19,13 +19,13 @@ impl Config {
             .unwrap_or_else(|_| "127.0.0.1".to_string());
 
         let port = std::env::var("PORT")
-            .unwrap_or_else(|_| "3000".to_string())
+            .unwrap_or_else(|_| "3009".to_string())
             .parse()
             .expect("PORT must be a number");
 
         #[rustfmt::skip]
         let cors_origin = std::env::var("CORS_ORIGIN")
-            .unwrap_or_else(|_| "http://127.0.0.1:8000".to_string());
+            .unwrap_or_else(|_| "http://127.0.0.1:8009".to_string());
 
         #[rustfmt::skip]
         let postgres_url = std::env::var("POSTGRES_URL")

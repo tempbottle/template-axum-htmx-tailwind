@@ -6,6 +6,7 @@ repository = "https://github.com/robertwayne/template-axum-htmx-tailwind"
 version = "0.1.0"
 edition = "2021"
 publish = false
+build = "build.rs"
 
 [dependencies]
 async-compression = { version = "0.4", features = ["brotli"] }
