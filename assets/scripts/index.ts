@@ -1,2 +1,2 @@
-import "../vendored/htmx@1.9.12.js"
+import "../vendored/htmx@2.0.0.js"
 import "../../build/index.css"
